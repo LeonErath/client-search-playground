@@ -1,0 +1,46 @@
+.tabList {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: fit-content;
+  border-radius: 4px;
+  min-height: calc(26px + 2px);
+  max-height: calc(26px + 2px);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tabList > button {
+  height: 100%;
+  padding: 4px 12px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  background: transparent;
+  border-radius: 0;
+}
+
+.tabList > button[aria-selected="true"] {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.tabList > button:hover {
+  background: transparent;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.tabList > button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.tabList > button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.tabList > .divider {
+  height: 100%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.4);
+}
